@@ -1,8 +1,42 @@
-@mixin flex-base{
+$main-color: #ffffff;
+$primary-color: #f53838;
+$text-color: #0b132a;
+$secondary-color: #f8f8f8;
+
+@mixin flex-base {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer{
-  font-size: 22px;
+
+.footer {
+  background-color: $secondary-color;
+  padding-bottom: 100px;
+  padding-top: 180px;
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    @include flex-base();
+    align-items: flex-start;
+  }
+  .footer-left {
+    max-width: 340px;
+    p {
+      line-height: 187%;
+    }
+    .icons{
+      img:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: lighter;
+  }
+  h4 {
+    padding-bottom: 10px;
+  }
 }

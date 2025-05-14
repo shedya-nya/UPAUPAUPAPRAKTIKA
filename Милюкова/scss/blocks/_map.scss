@@ -1,0 +1,35 @@
+$main-color: #ffffff;
+$primary-color: #f53838;
+$text-color: #0b132a;
+$secondary-color: #f8f8f8;
+
+@mixin flex-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map {
+  text-align: center;
+  .container {
+    max-width: 1135px;
+    margin: 0 auto;
+  }
+  img:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 0.1s;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 143%;
+    padding-bottom: 20px;
+  }
+  p{
+    line-height: 187%;
+    padding-bottom: 156px;
+  }
+  .companies {
+    padding-top: 36px;
+    @include flex-base();
+  }
+}

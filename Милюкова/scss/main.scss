@@ -46,4 +46,21 @@ body {
       transform: scale(1.05);
     }
   }
+  .disbtn {
+    border: 1px solid $primary-color;
+    border-radius: 50px;
+    color: $primary-color;
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+  }
+  .actbtn {
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    border-radius: 50px;
+    color: $main-color;
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+  }
 }

@@ -8,13 +8,34 @@ $secondary-color: #f8f8f8;
   align-items: center;
   justify-content: space-between;
 }
-.provide{
-  .container{
-    max-width: 1140px;
+.provide {
+  padding-top: 96px;
+  padding-bottom: 132px;
+  .container {
+    max-width: 1105px;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 170px;
   }
-  li{
+  h2 {
+    padding-bottom: 20px;
+    font-size: 35px;
+    line-height: 143%;
+  }
+  p {
+    font-size: 16px;
+    line-height: 187%;
+    padding-bottom: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  li {
     display: flex;
     align-items: center;
+    gap: 10px;
   }
 }
