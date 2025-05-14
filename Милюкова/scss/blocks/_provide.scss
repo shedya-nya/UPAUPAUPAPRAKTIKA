@@ -1,0 +1,20 @@
+$main-color: #ffffff;
+$primary-color: #f53838;
+$text-color: #0b132a;
+$secondary-color: #f8f8f8;
+
+@mixin flex-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.provide{
+  .container{
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  li{
+    display: flex;
+    align-items: center;
+  }
+}

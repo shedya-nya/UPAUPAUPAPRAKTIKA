@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "./blocks/_header.scss";
+@import "./blocks/_hero.scss";
+@import "./blocks/_provide.scss";
+@import "./blocks/_plan.scss";
+@import "./blocks/_map.scss";
+@import "./blocks/_testimonials.scss";
+@import "./blocks/_subscribe.scss";
+@import "./blocks/_footer.scss";
+
+$main-color: #ffffff;
+$primary-color: #f53838;
+$text-color: #0b132a;
+$secondary-color: #f8f8f8;
+
+@mixin flex-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: $main-color;
+  color: $text-color;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+  button {
+    color: $text-color;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+}
