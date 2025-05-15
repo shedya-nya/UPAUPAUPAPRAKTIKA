@@ -1,0 +1,39 @@
+$main-color: #ffffff;
+$primary-color: #156963;
+$secondary-color: #f3f4f6;
+
+@mixin contconst {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+@mixin flex-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get {
+  padding-bottom: 80px;
+  .container {
+    @include contconst();
+    @include flex-base();
+    background-color: $secondary-color;
+    gap: 6px;
+  }
+  .text{
+    padding-left: 97px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: #2c1500;
+  }
+  .actbtn {
+    border: 1px solid $primary-color;
+    background: $primary-color;
+    padding: 10px 20px;
+    width: 152px;
+    height: 40px;
+  }
+}

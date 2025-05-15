@@ -1,0 +1,38 @@
+$main-color: #ffffff;
+$primary-color: #156963;
+$secondary-color: #f3f4f6;
+
+@mixin contconst {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+@mixin flex-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy {
+  padding-bottom: 80px;
+  .container {
+    @include contconst();
+    @include flex-base();
+    gap: 84px;
+  }
+  .left {
+    h2 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 140%;
+      color: #2c1500;
+    }
+    p {
+      padding-bottom: 74px;
+      padding-top: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      opacity: 0.8;
+    }
+  }
+}

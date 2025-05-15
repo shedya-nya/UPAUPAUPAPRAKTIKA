@@ -1,66 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import "./blocks/_header.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "./blocks/_hero.scss";
-@import "./blocks/_provide.scss";
-@import "./blocks/_plan.scss";
-@import "./blocks/_map.scss";
-@import "./blocks/_testimonials.scss";
-@import "./blocks/_subscribe.scss";
+@import "./blocks/_header.scss";
 @import "./blocks/_footer.scss";
+@import "./blocks/_get.scss";
+@import "./blocks/_plants.scss";
+@import "./blocks/_buy.scss";
+@import "./blocks/_cards.scss";
 
 $main-color: #ffffff;
-$primary-color: #f53838;
-$text-color: #0b132a;
-$secondary-color: #f8f8f8;
+$primary-color: #156963;
+$secondary-color: #f3f4f6;
+
+@mixin contconst {
+  max-width: 1168px;
+  margin: 0 auto;
+}
 
 @mixin flex-base {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: "Rubik", sans-serif;
   background-color: $main-color;
-  color: $text-color;
-  ul {
-    list-style: none;
+  .actbtn {
+    background-color: $primary-color;
+    color: $main-color;
+    border: none;
+    padding: 8px 20px;
+    width: 111px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .disbtn {
+    background-color: $main-color;
+    color: $primary-color;
+    border: none;
+    padding: 8px 20px;
+    width: 111px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: ease-in-out 0.2s;
   }
   a {
     text-decoration: none;
-    color: $text-color;
-  }
-  button {
-    color: $text-color;
-    background: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    &:hover{
-      transform: scale(1.05);
-    }
-  }
-  .disbtn {
-    border: 1px solid $primary-color;
-    border-radius: 50px;
-    color: $primary-color;
-    width: 150px;
-    height: 45px;
-    font-weight: bold;
-  }
-  .actbtn {
-    border: 1px solid $primary-color;
-    background-color: $primary-color;
-    border-radius: 50px;
-    color: $main-color;
-    width: 150px;
-    height: 45px;
-    font-weight: bold;
   }
 }

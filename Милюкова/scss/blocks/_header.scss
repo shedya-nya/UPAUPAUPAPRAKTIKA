@@ -1,29 +1,33 @@
-$primary-color: #f53838;
+$main-color: #ffffff;
+$primary-color: #156963;
+$secondary-color: #f3f4f6;
 
-@mixin flex-base {
+@mixin contconst {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+@mixin flex-base{
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header {
-  padding-top: 45px;
-  .container {
-    max-width: 1140px;
-    margin: 0 auto;
+header{
+  padding-top: 40px;
+  padding-right: 56px;
+  padding-left: 56px;
+  position: relative;
+  z-index: 2;
+  .container{
+    @include contconst();
     @include flex-base();
   }
-  ul {
-    display: flex;
-    gap: 40px;
-    font-weight: 400;
-    font-size: 16px;
-  }
-  .buttons {
-    display: flex;
-    gap: 30px;
-  }
-  .nonebtn {
-    border: none;
+  nav{
+    @include flex-base();
+    .icons{
+      display: flex;
+      gap: 40px;
+      padding-right: 8px;
+    }
   }
 }

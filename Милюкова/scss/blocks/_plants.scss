@@ -1,0 +1,65 @@
+$main-color: #ffffff;
+$primary-color: #156963;
+$secondary-color: #f3f4f6;
+
+@mixin contconst {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+@mixin flex-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plants {
+  .container {
+    @include contconst();
+  }
+  .card-up {
+    @include flex-base();
+    .button {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      border: 1px solid #e0e0e0;
+      padding: 8px 12px;
+      width: 130px;
+      height: 31px;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .line{
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .plantgroup {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 80px;
+    .card {
+      &:hover{
+        transform: scale(1.02);
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+      }
+      text-align: center;
+      h3 {
+        padding-top: 16px;
+        padding-bottom: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+}

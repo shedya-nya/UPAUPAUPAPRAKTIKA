@@ -1,0 +1,52 @@
+$main-color: #ffffff;
+$primary-color: #156963;
+$secondary-color: #f3f4f6;
+
+@mixin contconst {
+  max-width: 1168px;
+  margin: 0 auto;
+}
+@mixin flex-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards {
+  padding-top: 140px;
+  padding-bottom: 101px;
+  .container {
+    @include contconst();
+    @include flex-base();
+    gap: 32px;
+  }
+  .card {
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    .card-up {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 16px;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: $primary-color;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 160%;
+      color: #2c1500;
+    }
+    &:hover{
+      transform: scale(1.02);
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
